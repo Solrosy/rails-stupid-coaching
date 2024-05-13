@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="d-grid gap-2 col-8 mx-auto">
+    <h2 class="display-6 my-5">Stupid Coaching</h2>
+    <div class="border-start border-5 p-3 mb-5 fs-5">
+      <div><%= @question %></div>
+      <div class="fst-italic fst-lighter my-3">-- You</div>
+    </div>
+
+    <div class="border-start border-5 p-3 mb-5 bg-opacity-10 bg-warning bg-gradient fs-5">
+      <div><%= @answer %></div>
+      <div class="fst-italic fst-lighter my-3">-- Your coach</div>
+    </div>
+
+    <%= link_to "Ask another question", ask_path, :class => "btn btn-outline-dark" %>
+  </div>
+</div>
